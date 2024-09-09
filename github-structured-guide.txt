@@ -1,0 +1,250 @@
+Aquí tienes una guía estructurada para aprender *GitHub* y *control de versiones* paso a paso, con ejemplos y explicaciones. A lo largo de este proceso, utilizaremos *Git*, que es el sistema de control de versiones en el que se basa GitHub.
+
+---
+
+### *Clase 1: Introducción a Git y GitHub*
+
+#### *Objetivo*: Comprender qué es Git, qué es GitHub y por qué son importantes.
+
+1. *Qué es Git*:
+   - Git es un *sistema de control de versiones distribuido*. Nos permite llevar un registro de los cambios en nuestro código a lo largo del tiempo.
+   
+2. *Qué es GitHub*:
+   - GitHub es una *plataforma basada en Git* para almacenar proyectos y colaborar con otros. Proporciona una interfaz web que facilita el trabajo en equipo.
+
+3. *¿Por qué usar Git?*
+   - Control de versiones (historial de cambios).
+   - Colaboración (varios usuarios pueden trabajar en el mismo proyecto).
+   - Trabajo seguro (se pueden revertir cambios).
+   
+---
+
+### *Clase 2: Instalación de Git*
+
+#### *Objetivo*: Instalar y configurar Git en tu máquina.
+
+1. *Instalación*:
+   - *Windows*: Descarga desde [Git para Windows](https://git-scm.com/download/win).
+   - *Mac*: Usa brew install git.
+   - *Linux*: Usa sudo apt-get install git (Debian/Ubuntu) o sudo yum install git (CentOS/RedHat).
+
+2. *Configuración inicial*:
+   Configura tu nombre de usuario y correo electrónico, que se asociarán con tus cambios en Git:
+   bash
+   git config --global user.name "Tu Nombre"
+   git config --global user.email "tuemail@ejemplo.com"
+   
+
+3. *Verifica la instalación*:
+   bash
+   git --version
+   
+
+---
+
+### *Clase 3: Creación de un Repositorio*
+
+#### *Objetivo*: Crear un repositorio local y subirlo a GitHub.
+
+1. *Inicializar un repositorio local*:
+   Crea una carpeta para tu proyecto y navega hasta ella:
+   bash
+   mkdir mi_proyecto
+   cd mi_proyecto
+   
+
+   Inicializa Git en la carpeta:
+   bash
+   git init
+   
+
+   Esto crea un repositorio de Git vacío en tu carpeta.
+
+2. *Crear un archivo en el repositorio*:
+   Crea un archivo llamado index.html (puede ser cualquier archivo):
+   bash
+   touch index.html
+   
+
+3. *Agregar y confirmar (commit) los archivos*:
+   Añade el archivo al "staging area":
+   bash
+   git add index.html
+   
+
+   Crea un commit (confirmación) con un mensaje:
+   bash
+   git commit -m "Primer commit: Agregar index.html"
+   
+
+4. *Subir el repositorio a GitHub*:
+   Ve a *GitHub, crea un nuevo repositorio y **NO* marques la opción de inicializar con un README (porque ya tenemos el repositorio local).
+
+   Conecta el repositorio local a GitHub:
+   bash
+   git remote add origin https://github.com/tu_usuario/mi_proyecto.git
+   
+
+   Sube los cambios a GitHub:
+   bash
+   git push -u origin master
+   
+
+---
+
+### *Clase 4: Clonación y Trabajo Colaborativo*
+
+#### *Objetivo*: Clonar un repositorio existente y hacer cambios en colaboración.
+
+1. *Clonar un repositorio*:
+   Cuando trabajas en equipo, necesitas clonar el repositorio desde GitHub. Usa el siguiente comando:
+   bash
+   git clone https://github.com/tu_usuario/mi_proyecto.git
+   
+
+   Esto creará una copia local del repositorio en tu máquina.
+
+2. *Crear una rama* (branch):
+   Una buena práctica es crear una rama para cada nueva funcionalidad que estés desarrollando:
+   bash
+   git checkout -b nueva_funcionalidad
+   
+
+3. *Hacer cambios y confirmarlos*:
+   Haz algunos cambios en el archivo index.html. Luego, agrega y confirma los cambios:
+   bash
+   git add index.html
+   git commit -m "Agregué una nueva funcionalidad"
+   
+
+4. *Subir los cambios en la nueva rama*:
+   Empuja los cambios al repositorio en GitHub:
+   bash
+   git push origin nueva_funcionalidad
+   
+
+---
+
+### *Clase 5: Fusiones y Pull Requests*
+
+#### *Objetivo*: Fusionar una rama con la principal (master/main) usando Git y GitHub.
+
+1. *Fusiones en Git (merge)*:
+   - Primero, ve de nuevo a la rama principal:
+   bash
+   git checkout master
+   
+
+   - Luego, fusiona la rama con la nueva funcionalidad:
+   bash
+   git merge nueva_funcionalidad
+   
+
+2. *Resolver conflictos*:
+   Si dos personas han hecho cambios en la misma parte del archivo, Git te mostrará un conflicto. Deberás abrir el archivo afectado y decidir qué cambios mantener. Una vez resuelto, realiza un commit.
+
+3. *Pull Requests en GitHub*:
+   - Cuando terminas tu trabajo, subes los cambios y haces un *Pull Request* en GitHub, solicitando que se fusionen tus cambios con la rama principal.
+   - Otro miembro del equipo revisa el código y lo acepta o lo rechaza.
+
+---
+
+### *Clase 6: Control de Versiones Avanzado*
+
+#### *Objetivo*: Aprender comandos avanzados para manejar versiones y revertir cambios.
+
+1. *Ver el historial de commits*:
+   Puedes ver un historial de los cambios hechos en el proyecto:
+   bash
+   git log
+   
+
+2. *Revertir cambios no confirmados*:
+   Si cambiaste un archivo y aún no lo has confirmado, puedes revertir los cambios:
+   bash
+   git checkout -- index.html
+   
+
+3. *Deshacer el último commit*:
+   Si cometiste un error en tu último commit:
+   bash
+   git reset --soft HEAD~1
+   
+
+4. *Crear tags*:
+   Los *tags* te permiten marcar versiones importantes (como una versión de lanzamiento):
+   bash
+   git tag -a v1.0 -m "Versión 1.0"
+   git push origin v1.0
+   
+
+---
+
+### *Clase 7: Colaboración Avanzada*
+
+#### *Objetivo*: Aprender a colaborar en equipos usando forking, pull requests, y resolución de conflictos.
+
+1. *Fork y Pull Requests*:
+   Si no eres el dueño del repositorio, puedes "forkearlo" (hacer una copia del proyecto a tu cuenta) y luego contribuir mediante un *Pull Request*.
+
+   - Forkea un proyecto.
+   - Clona el fork a tu máquina:
+     bash
+     git clone https://github.com/tu_usuario/proyecto_forkeado.git
+     
+
+   - Haz cambios en tu fork y súbelos:
+     bash
+     git push origin mi_rama
+     
+
+   - Haz un *Pull Request* al repositorio original.
+
+2. *Mantener tu fork actualizado*:
+   Para mantener tu fork actualizado con el proyecto original, necesitas agregar un "remote" al repositorio original:
+   bash
+   git remote add upstream https://github.com/proyecto_original.git
+   
+
+   Luego, puedes traer los cambios con:
+   bash
+   git fetch upstream
+   git merge upstream/master
+   
+
+---
+
+### *Clase 8: Trabajo con GitHub Actions*
+
+#### *Objetivo: Automatizar tareas usando **GitHub Actions*.
+
+1. *¿Qué son GitHub Actions?*
+   GitHub Actions permite automatizar flujos de trabajo, como ejecutar pruebas o desplegar código cuando haces un push o pull request.
+
+2. *Crear una GitHub Action*:
+   - En tu repositorio, ve a la pestaña "Actions".
+   - Selecciona una plantilla, como "Node.js" si estás trabajando con JavaScript.
+
+   Esto crea un archivo YAML que define los pasos que quieres automatizar. Por ejemplo:
+
+   yaml
+   name: CI
+   on:
+     push:
+       branches:
+         - master
+   jobs:
+     build:
+       runs-on: ubuntu-latest
+       steps:
+         - uses: actions/checkout@v2
+         - name: Install Dependencies
+           run: npm install
+         - name: Run Tests
+           run: npm test
+   
+
+---
+
+### Conclusión
+Este roadmap cubre los aspectos básicos y avanzados de Git y GitHub. A medida que avances, irás aprendiendo más técnicas para colaborar de manera eficiente y manejar proyectos más grandes.
