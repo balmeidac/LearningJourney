@@ -16,7 +16,7 @@ Console.Write("Enter the temperature in Celsius degrees: ");
 
 // Read the value as a string
 var c = Console.ReadLine();
-//Console.Write("°C");
+//Console.Write("Â°C");
 // Convert the value from string to double (or int, depending on your needs)
 double celsius = Convert.ToDouble(c);
 
@@ -24,11 +24,11 @@ double celsius = Convert.ToDouble(c);
 var f = (celsius * 9 / 5) + 32;
 
 // Display the result
-Console.WriteLine("The result in Fahrenheit degrees is: " + f + "°F");
+Console.WriteLine("The result in Fahrenheit degrees is: " + f + "Â°F");
 Console.WriteLine();
 
 4. *Circle Area:*
-   - Write a program that calculates the area of a circle. Declare a constant PI (3.14159) and a variable for the radius. Calculate the area using the formula: Area = PI * radius^2
+   - Write a program that calculates the area of a circle. Declare a constant PI (3.14159) and a variable for the radius. Calculate the area using the formula: Area =Â PIÂ *Â radius^2
    
 // Clears the console screen
 Console.Clear();
@@ -54,11 +54,29 @@ Console.WriteLine($"If the radius is: {r} m. Then the Circle Area is: {area:f2} 
     
 Ejercicios con Strings:
 
-1. *Concatenación de Strings:*
-   - Declara dos variables string, por ejemplo, con un nombre y un apellido. Concatenalas y muestra el resultado en la consola.
+1. *ConcatenaciÃ³n de Strings:*
+   - Declara dos variables string, por ejemplo, con un nombre y un apellido. Concatenalas y muestra el resultadoÂ enÂ laÂ consola.
+
+   // Clears the console screen
+Console.Clear();
+
+// Prompts the user to enter their name
+Console.Write("Enter your name: ");
+
+// Reads the input from the user and stores it in the variable 'name'
+var name = Console.ReadLine();
+
+// Prompts the user to enter their last name
+Console.Write("Enter your lastname: ");
+
+// Reads the input from the user and stores it in the variable 'lastname'
+var lastname = Console.ReadLine();
+
+// Outputs a greeting message including the user's full name
+Console.WriteLine($"Hi, {name} {lastname}, glad to see you!.");
    
  ### Recomendaciones:
 Concentrate solo en los integers y si puedes investigar double, char, long, float para que vayas revisando los tipos de datos y con eso puedes crear formulas e imprimir los resultados con C# para que practiques poco a poco.
 
-Pueden ser operaciones matematicas o geometricas eso ya puedes hacer para que entiendas lo de las variables, y que puedes crear formulas, la logica y mandarla a imprimir.
+Pueden ser operaciones matematicas o geometricas eso ya puedes hacer para que entiendas lo de las variables, y que puedes crear formulas, la logica y mandarlaÂ aÂ imprimir.
  
