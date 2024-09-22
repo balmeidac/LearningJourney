@@ -1,0 +1,35 @@
+### *Intermediate Exercises (11-20):*
+
+11. *Nested Even and Positive Check*:  
+    Write a program that first checks if a number is even and, if true, checks whether the number is positive.
+
+12. *Check for Multiple Conditions*:  
+    Write a program that checks if a number is divisible by 2, 3, and 5 using nested if statements.
+
+13. *Multiple Age Categories*:  
+    Write a program that categorizes a person based on their age. Check if they are a child (<13), a teenager (13–19), an adult (20–59), or a senior (60+).
+
+14. *Nested Temperature Check*:  
+    Write a program that checks if a temperature is below freezing (0°C), and if it is below, check if it's very cold (< -10°C).
+
+15. *Number in Range and Odd Check*:  
+    Write a program that checks if a number is between 10 and 100. If it is, check if it's odd or even.
+
+16. *Nested Prime Check*:  
+    Write a program that first checks if a number is greater than 1 and then checks whether the number is a prime number.
+
+17. *Login System*:  
+    Write a program that checks a username and password. If both are correct, allow access; otherwise, deny it. If the username is correct but the password is wrong, print a specific message.
+
+18. *Nested Height and Weight Check*:  
+    Write a program that checks if a person's height is greater than 170 cm and, if true, checks if their weight is less than 70 kg.
+
+19. *Three Number Comparison*:  
+    Write a program that checks which among three given numbers is the largest using if, else if, and else.
+
+20. *Shopping Discount*:  
+    Write a program that checks if a customer is eligible for a discount. If their purchase amount is more than $100 and they are a member, they get a 20% discount. Otherwise, no discount is applied.
+
+---
+
+These exercises are designed to give you practice with logical operators (&&, ||) and nested conditional statements. Let me know if you need further clarifications or additional examples!
