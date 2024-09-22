@@ -1,0 +1,48 @@
+En *C#*, las convenciones para declarar variables, nombres de clases, y métodos siguen ciertos patrones que facilitan la legibilidad y el mantenimiento del código. Aquí te explico cómo se suelen nombrar:
+
+### 1. *Variables*:
+   - *Camel case: Se utiliza el formato **camelCase* para las variables. La primera letra de la palabra es minúscula, y cada palabra adicional empieza con una letra mayúscula.
+   - Ejemplo:
+     csharp
+     int totalAmount;
+     string firstName;
+     
+
+### 2. *Nombres de Clases*:
+   - *Pascal case: Las clases usan el formato **PascalCase*, donde cada palabra empieza con una letra mayúscula, incluida la primera palabra.
+   - Ejemplo:
+     csharp
+     public class CustomerDetails { }
+     public class ProductManager { }
+     
+
+### 3. *Funciones o Métodos*:
+   - *Pascal case: Los nombres de funciones o métodos también siguen la convención de **PascalCase*, es decir, cada palabra comienza con mayúscula.
+   - Ejemplo:
+     csharp
+     public void CalculateTotalAmount() { }
+     public string GetCustomerName() { }
+     
+
+### 4. *Propiedades*:
+   - *Pascal case: Las propiedades (getters y setters) también se nombran utilizando **PascalCase*.
+   - Ejemplo:
+     csharp
+     public int Age { get; set; }
+     public string FullName { get; set; }
+     
+
+### 5. *Constantes*:
+   - *Mayúsculas con guiones bajos: Las constantes suelen escribirse en **mayúsculas* y, si el nombre es compuesto, las palabras se separan con un *guion bajo* (_).
+   - Ejemplo:
+     csharp
+     public const int MAX_SIZE = 100;
+     public const string DEFAULT_LANGUAGE = "English";
+     
+
+### Resumen de convenciones:
+- *Variables locales y parámetros*: camelCase
+- *Clases, métodos y propiedades*: PascalCase
+- *Constantes*: MAYÚSCULAS_CON_GUIONES_BAJOS
+
+Estas convenciones no son estrictas pero sí recomendadas para mantener la consistencia y seguir las mejores prácticas en C#.

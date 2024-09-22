@@ -1,0 +1,31 @@
+### *Basic Exercises (1-10):*
+
+1. *Check Even or Odd*:  
+   Write a program to check if a number is even or odd using the modulus (%) operator in an if statement.
+
+2. *Check Positive or Negative*:  
+   Write a program that checks whether a number is positive or negative.
+
+3. *Check Leap Year*:  
+   Write a program that checks if a year is a leap year or not. A year is a leap year if it is divisible by 4 but not divisible by 100, or it is divisible by 400.
+
+4. *Check if Adult*:  
+   Write a program that checks if a person is considered an adult based on their age. Assume an adult is 18 years or older.
+
+5. *Compare Two Numbers*:  
+   Write a program to compare two numbers and print whether the first number is greater, less, or equal to the second number.
+
+6. *Check Divisibility*:  
+   Write a program that checks whether a number is divisible by both 3 and 5.
+
+7. *Check Uppercase Letter*:  
+   Write a program to check if a given character is an uppercase letter (between 'A' and 'Z').
+
+8. *Check Voting Eligibility*:  
+   Write a program that checks if a person is eligible to vote based on their age. Voting eligibility starts at 18 years.
+
+9. *Check Temperature Range*:  
+   Write a program that checks whether a given temperature is in the "cold" range (<15°C), "warm" range (15°C–25°C), or "hot" range (>25°C).
+
+10. *Simple Pass/Fail Check*:  
+    Write a program that checks if a student has passed an exam. A student passes if their score is 50 or more.

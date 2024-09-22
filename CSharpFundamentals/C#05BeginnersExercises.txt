@@ -1,0 +1,64 @@
+### Beginner Exercises:
+1. *Variable Declaration:*
+   - Declare three variables: one of type int, one of type double, and one of type char. Assign values to each of them and print them to the console.
+
+2. *Basic Arithmetic:*
+   - Declare two integer variables and perform addition, subtraction, multiplication, and division on them. Display the results.
+
+3. *Temperature Conversion:*
+   - Write a program that converts a temperature from Celsius to Fahrenheit. Use a variable to store the Celsius value and print the result in Fahrenheit using the formula: F = C * 9/5 + 32.
+   
+   // Clear the console screen at the start of the program
+Console.Clear();
+
+// Prompt the user to enter the temperature in degrees Celsius
+Console.Write("Enter the temperature in Celsius degrees: ");
+
+// Read the value as a string
+var c = Console.ReadLine();
+//Console.Write("°C");
+// Convert the value from string to double (or int, depending on your needs)
+double celsius = Convert.ToDouble(c);
+
+// Perform the conversion from Celsius to Fahrenheit
+var f = (celsius * 9 / 5) + 32;
+
+// Display the result
+Console.WriteLine("The result in Fahrenheit degrees is: " + f + "°F");
+Console.WriteLine();
+
+4. *Circle Area:*
+   - Write a program that calculates the area of a circle. Declare a constant PI (3.14159) and a variable for the radius. Calculate the area using the formula: Area = PI * radius^2
+   
+// Clears the console screen
+Console.Clear();
+
+// Defines the value of pi as a constant (approximate)
+var pi = 3.1416;
+
+// Prompts the user to enter the radius of the circle
+Console.Write("Enter the Circle Radius (m): ");
+
+// Reads the user's input as a string
+var r = Console.ReadLine();
+
+// Converts the string input to a double data type for numeric operations
+double radius = Convert.ToDouble(r);
+
+// Calculates the area of the circle using the formula p * radius^2
+var area = pi * radius * radius;
+
+// Displays the result, showing both the entered radius and the calculated area
+Console.WriteLine($"If the radius is: {r} m. Then the Circle Area is: {area:f2} m^2");
+
+    
+Ejercicios con Strings:
+
+1. *Concatenación de Strings:*
+   - Declara dos variables string, por ejemplo, con un nombre y un apellido. Concatenalas y muestra el resultado en la consola.
+   
+ ### Recomendaciones:
+Concentrate solo en los integers y si puedes investigar double, char, long, float para que vayas revisando los tipos de datos y con eso puedes crear formulas e imprimir los resultados con C# para que practiques poco a poco.
+
+Pueden ser operaciones matematicas o geometricas eso ya puedes hacer para que entiendas lo de las variables, y que puedes crear formulas, la logica y mandarla a imprimir.
+ 
